@@ -21,7 +21,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'FlutterChat',
+      debugShowCheckedModeBanner: false,
+      title: 'Recipe App',
       theme: ThemeData(
         primarySwatch: Colors.pink,
         backgroundColor: Colors.pink,

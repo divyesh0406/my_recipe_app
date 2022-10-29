@@ -54,13 +54,13 @@ class _CartScreenState extends State<CartScreen> {
   void _openCheckOut() async {
     print('testing payemtn');
     var options = {
-      'key': 'rzp_test_zhKZn116brpEdc',
+      'key': 'Enter Your API Key',
       'amount': 100 * sum,
       'name': 'test name',
       'description': 'test des',
       'prefill': {
-        'contact': '9167404044',
-        'email': 'divyeshrmistry@gmail.com',
+        'contact': '',
+        'email': '',
       },
     };
     try {
@@ -186,7 +186,6 @@ class _CartScreenState extends State<CartScreen> {
   dynamic sum;
 
   _getTotal() {
-
     qtyCounts.forEach((key, value) {
       if (allPricedIngredients.containsKey(key)) {
         var cal = allPricedIngredients[key] * qtyCounts[key];
